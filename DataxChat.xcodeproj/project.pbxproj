@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		AA5F03BD1E580170009401F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5F03BC1E580170009401F0 /* AppDelegate.swift */; };
-		AA5F03BF1E580170009401F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5F03BE1E580170009401F0 /* ViewController.swift */; };
+		AA5F03BF1E580170009401F0 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5F03BE1E580170009401F0 /* CameraVC.swift */; };
 		AA5F03C21E580170009401F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5F03C01E580170009401F0 /* Main.storyboard */; };
 		AA5F03C41E580170009401F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA5F03C31E580170009401F0 /* Assets.xcassets */; };
 		AA5F03C71E580170009401F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5F03C51E580170009401F0 /* LaunchScreen.storyboard */; };
+		AA5F03D21E5805BB009401F0 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5F03D11E5805BB009401F0 /* PreviewView.swift */; };
+		AA5F03D41E5805D2009401F0 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5F03D31E5805D2009401F0 /* CameraViewController.swift */; };
+		AA5F03D61E5805DB009401F0 /* PhotoCaptureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5F03D51E5805DB009401F0 /* PhotoCaptureDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AA5F03B91E580170009401F0 /* DataxChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataxChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA5F03BC1E580170009401F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AA5F03BE1E580170009401F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AA5F03BE1E580170009401F0 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CameraVC.swift; path = Controller/CameraVC.swift; sourceTree = "<group>"; };
 		AA5F03C11E580170009401F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA5F03C31E580170009401F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA5F03C61E580170009401F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA5F03C81E580170009401F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA5F03D11E5805BB009401F0 /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		AA5F03D31E5805D2009401F0 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		AA5F03D51E5805DB009401F0 /* PhotoCaptureDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCaptureDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,41 @@
 		AA5F03BB1E580170009401F0 /* DataxChat */ = {
 			isa = PBXGroup;
 			children = (
-				AA5F03BC1E580170009401F0 /* AppDelegate.swift */,
-				AA5F03BE1E580170009401F0 /* ViewController.swift */,
+				AA5F03D01E5805AB009401F0 /* Delegate */,
+				AA5F03CF1E58018B009401F0 /* Controller */,
+				AA5F03CE1E580185009401F0 /* View */,
 				AA5F03C01E580170009401F0 /* Main.storyboard */,
 				AA5F03C31E580170009401F0 /* Assets.xcassets */,
 				AA5F03C51E580170009401F0 /* LaunchScreen.storyboard */,
 				AA5F03C81E580170009401F0 /* Info.plist */,
 			);
 			path = DataxChat;
+			sourceTree = "<group>";
+		};
+		AA5F03CE1E580185009401F0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AA5F03D11E5805BB009401F0 /* PreviewView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		AA5F03CF1E58018B009401F0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AA5F03D31E5805D2009401F0 /* CameraViewController.swift */,
+				AA5F03BE1E580170009401F0 /* CameraVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		AA5F03D01E5805AB009401F0 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				AA5F03BC1E580170009401F0 /* AppDelegate.swift */,
+				AA5F03D51E5805DB009401F0 /* PhotoCaptureDelegate.swift */,
+			);
+			name = Delegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA5F03BF1E580170009401F0 /* ViewController.swift in Sources */,
+				AA5F03BF1E580170009401F0 /* CameraVC.swift in Sources */,
+				AA5F03D41E5805D2009401F0 /* CameraViewController.swift in Sources */,
 				AA5F03BD1E580170009401F0 /* AppDelegate.swift in Sources */,
+				AA5F03D61E5805DB009401F0 /* PhotoCaptureDelegate.swift in Sources */,
+				AA5F03D21E5805BB009401F0 /* PreviewView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +301,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4U3383F2ZS;
 				INFOPLIST_FILE = DataxChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.datnguyen.DataxChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -278,6 +315,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4U3383F2ZS;
 				INFOPLIST_FILE = DataxChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.datnguyen.DataxChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -304,6 +342,7 @@
 				AA5F03CD1E580170009401F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
