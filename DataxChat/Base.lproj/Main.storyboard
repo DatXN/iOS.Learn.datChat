@@ -21,26 +21,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ydh-eW-Eb6" customClass="PreviewView" customModule="DataxChat" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KMO-Dh-tW6" customClass="PreviewView" customModule="DataxChat" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ydh-eW-Eb6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="e8q-6v-4of"/>
-                            <constraint firstAttribute="trailing" secondItem="ydh-eW-Eb6" secondAttribute="trailing" id="etL-mR-sTE"/>
-                            <constraint firstItem="ydh-eW-Eb6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fTm-ho-HcN"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ydh-eW-Eb6" secondAttribute="bottom" id="hqd-Pu-7kN"/>
+                            <constraint firstItem="KMO-Dh-tW6" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="8E2-Xh-gHF"/>
+                            <constraint firstItem="KMO-Dh-tW6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VMt-yv-UGH"/>
+                            <constraint firstItem="KMO-Dh-tW6" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="baX-FI-HAi"/>
+                            <constraint firstItem="KMO-Dh-tW6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vrP-Yv-0gq"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="previewView" destination="ydh-eW-Eb6" id="jqA-Ao-PPe"/>
+                        <outlet property="curPreviewView" destination="KMO-Dh-tW6" id="3qy-aF-lOp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+            <point key="canvasLocation" x="116.25" y="121.47887323943662"/>
         </scene>
     </scenes>
 </document>
