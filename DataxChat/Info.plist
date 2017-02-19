@@ -45,5 +45,7 @@
 	</array>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>May we use microfone?</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>May we access your photo library?</string>
 </dict>
 </plist>

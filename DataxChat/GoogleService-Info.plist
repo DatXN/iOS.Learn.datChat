@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>530510813865-bjml0thrlkp4t268bf9d5vdr645chsff.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.530510813865-bjml0thrlkp4t268bf9d5vdr645chsff</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDwb38EFp9dSf00_YfRPuR1ffpf9qJ741s</string>
+	<key>GCM_SENDER_ID</key>
+	<string>530510813865</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.datnguyen.UIScrollView</string>
+	<key>PROJECT_ID</key>
+	<string>ios-learn-dataxchat</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ios-learn-dataxchat.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:530510813865:ios:f1635a1a7c6e3cf1</string>
+	<key>DATABASE_URL</key>
+	<string>https://ios-learn-dataxchat.firebaseio.com</string>
+</dict>
+</plist>

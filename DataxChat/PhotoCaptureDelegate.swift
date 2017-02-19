@@ -10,7 +10,9 @@ import AVFoundation
 import Photos
 
 class PhotoCaptureDelegate: NSObject, AVCapturePhotoCaptureDelegate {
-	private(set) var requestedPhotoSettings: AVCapturePhotoSettings
+   
+    
+    private(set) var requestedPhotoSettings: AVCapturePhotoSettings
 	
 	private let willCapturePhotoAnimation: () -> ()
 	
@@ -77,19 +79,29 @@ class PhotoCaptureDelegate: NSObject, AVCapturePhotoCaptureDelegate {
 		livePhotoCompanionMovieURL = outputFileURL
 	}
 	
-    func capture(_ captureOutput: AVCapturePhotoOutput, didFinishCaptureForResolvedSettings resolvedSettings: AVCaptureResolvedPhotoSettings, error: Error?) {
+    typealias onSuccessFn = (Data)  -> Void
+    typealias onErrorFn = ()  -> Void
+    
+    var onSuccess: onSuccessFn!
+    var onError: onErrorFn!
+    
+    func capture(_ captureOutput: AVCapturePhotoOutput, didFinishCaptureForResolvedSettings resolvedSettings: AVCaptureResolvedPhotoSettings, error: Error?
+                 ) {
 		if let error = error {
 			print("Error capturing photo: \(error)")
 			didFinish()
+            onError()
 			return
 		}
 		
 		guard let photoData = photoData else {
 			print("No photo data resource")
 			didFinish()
+            onError()
 			return
 		}
-		
+        onSuccess(photoData)
+		/*
 		PHPhotoLibrary.requestAuthorization { [unowned self] status in
 			if status == .authorized {
 				PHPhotoLibrary.shared().performChanges({ [unowned self] in
@@ -115,5 +127,6 @@ class PhotoCaptureDelegate: NSObject, AVCapturePhotoCaptureDelegate {
 				self.didFinish()
 			}
 		}
+         */
 	}
 }

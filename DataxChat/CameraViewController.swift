@@ -11,6 +11,25 @@ import AVFoundation
 import Photos
 
 class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelegate {
+    func videoRecordingComplete(videoURL: URL) {
+
+    }
+    func videoRecordingFailed() {
+
+    }
+    func snapshotTaken(snapshotData: Data) {
+
+    }
+    func snapshotFailed() {
+
+    }
+    
+    
+    
+    
+
+    
+    
     // MARK: View Controller Life Cycle
     func tempInitControls() {
         // For using without worry about use all Apple controls
@@ -96,7 +115,11 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
 		*/
         sessionQueue.async { [unowned self] in
             self.configureSession()
+            //
+            self.toggleCaptureMode(mode: CaptureMode.movie.rawValue)
         }
+
+
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -338,8 +361,9 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
 
     @IBOutlet private var captureModeControl: UISegmentedControl!
 
-    @IBAction private func toggleCaptureMode(_ captureModeControl: UISegmentedControl) {
-        if captureModeControl.selectedSegmentIndex == CaptureMode.photo.rawValue {
+    //@IBAction private func toggleCaptureMode(_ captureModeControl: UISegmentedControl) {
+    private func toggleCaptureMode(mode: Int) {
+        if mode == CaptureMode.photo.rawValue {
             recordButton.isEnabled = false
 
             sessionQueue.async { [unowned self] in
@@ -365,7 +389,7 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
                 }
             }
         }
-            else if captureModeControl.selectedSegmentIndex == CaptureMode.movie.rawValue
+            else if mode == CaptureMode.movie.rawValue
         {
             livePhotoModeButton.isHidden = true
 
@@ -395,13 +419,14 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
 
     // MARK: Device Configuration
 
-    @IBOutlet private var cameraButton: UIButton!
+    @IBOutlet weak var cameraButton: UIButton!
 
     @IBOutlet private var cameraUnavailableLabel: UILabel!
 
     private let videoDeviceDiscoverySession = AVCaptureDeviceDiscoverySession(deviceTypes: [.builtInWideAngleCamera, .builtInDuoCamera], mediaType: AVMediaTypeVideo, position: .unspecified)!
 
-    @IBAction private func changeCamera(_ cameraButton: UIButton) {
+    //@IBAction private func changeCamera(_ cameraButton: UIButton) {
+    func changeCamera() {
         cameraButton.isEnabled = false
         recordButton.isEnabled = false
         photoButton.isEnabled = false
@@ -606,6 +631,8 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
 				we store it in an array to maintain a strong reference to this object
 				until the capture is completed.
 			*/
+            photoCaptureDelegate.onError = self.snapshotFailed
+            photoCaptureDelegate.onSuccess = self.snapshotTaken(snapshotData:)
             self.inProgressPhotoCaptureDelegates[photoCaptureDelegate.requestedPhotoSettings.uniqueID] = photoCaptureDelegate
             self.photoOutput.capturePhoto(with: photoSettings, delegate: photoCaptureDelegate)
         }
@@ -646,11 +673,12 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
 
     private var backgroundRecordingID: UIBackgroundTaskIdentifier? = nil
 
-    @IBOutlet private var recordButton: UIButton!
+    @IBOutlet weak var recordButton: UIButton!
 
     @IBOutlet private var resumeButton: UIButton!
 
-    @IBAction private func toggleMovieRecording(_ recordButton: UIButton) {
+    //@IBAction private func toggleMovieRecording(_ recordButton: UIButton) {
+    func toggleMovieRecording() {
         guard let movieFileOutput = self.movieFileOutput else {
             return
         }
@@ -745,9 +773,12 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
         if error != nil {
             print("Movie file finishing error: \(error)")
             success = (((error as NSError).userInfo[AVErrorRecordingSuccessfullyFinishedKey] as AnyObject).boolValue)!
+            videoRecordingFailed()
         }
 
         if success {
+            videoRecordingComplete(videoURL: outputFileURL)
+            /*
             // Check authorization status.
             PHPhotoLibrary.requestAuthorization { status in
                 if status == .authorized {
@@ -769,8 +800,10 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
                     cleanup()
                 }
             }
+            */
         }
             else {
+            videoRecordingFailed()
             cleanup()
         }
 

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA21C00C1E5882A2002201D1 /* RoundTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA21C00B1E5882A2002201D1 /* RoundTextField.swift */; };
+		AA32631F1E58593F00B213CF /* MyCameraViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA32631E1E58593F00B213CF /* MyCameraViewDelegate.swift */; };
+		AA5E02B71E58A1CD007E5325 /* UsersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5E02B61E58A1CD007E5325 /* UsersVC.swift */; };
+		AA5E02B91E58A2CC007E5325 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5E02B81E58A2CC007E5325 /* UserCell.swift */; };
+		AA5E02BC1E58A6CE007E5325 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5E02BB1E58A6CE007E5325 /* User.swift */; };
 		AA5F03BD1E580170009401F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5F03BC1E580170009401F0 /* AppDelegate.swift */; };
 		AA5F03BF1E580170009401F0 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5F03BE1E580170009401F0 /* CameraVC.swift */; };
 		AA5F03C21E580170009401F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5F03C01E580170009401F0 /* Main.storyboard */; };
@@ -15,9 +20,21 @@
 		AA5F03D21E5805BB009401F0 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5F03D11E5805BB009401F0 /* PreviewView.swift */; };
 		AA5F03D41E5805D2009401F0 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5F03D31E5805D2009401F0 /* CameraViewController.swift */; };
 		AA5F03D61E5805DB009401F0 /* PhotoCaptureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5F03D51E5805DB009401F0 /* PhotoCaptureDelegate.swift */; };
+		AAD984681E5887F600364F5A /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD984671E5887F600364F5A /* RoundButton.swift */; };
+		AAD9846A1E58900400364F5A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD984691E58900400364F5A /* LoginVC.swift */; };
+		AAD9846C1E5890AD00364F5A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAD9846B1E5890AD00364F5A /* GoogleService-Info.plist */; };
+		AAD9846F1E58937F00364F5A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD9846E1E58937F00364F5A /* AuthService.swift */; };
+		AAD984711E5893B300364F5A /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD984701E5893B300364F5A /* DataService.swift */; };
+		F4637714DA3DDE87756E20A7 /* Pods_DataxChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30AC9A0475B234E6C93063D /* Pods_DataxChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		701990187F0F816A0E44A4CE /* Pods-DataxChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataxChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DataxChat/Pods-DataxChat.debug.xcconfig"; sourceTree = "<group>"; };
+		AA21C00B1E5882A2002201D1 /* RoundTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundTextField.swift; path = View/RoundTextField.swift; sourceTree = "<group>"; };
+		AA32631E1E58593F00B213CF /* MyCameraViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyCameraViewDelegate.swift; path = Delegate/MyCameraViewDelegate.swift; sourceTree = "<group>"; };
+		AA5E02B61E58A1CD007E5325 /* UsersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UsersVC.swift; path = Controller/UsersVC.swift; sourceTree = "<group>"; };
+		AA5E02B81E58A2CC007E5325 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserCell.swift; path = View/UserCell.swift; sourceTree = "<group>"; };
+		AA5E02BB1E58A6CE007E5325 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Model/User.swift; sourceTree = "<group>"; };
 		AA5F03B91E580170009401F0 /* DataxChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataxChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA5F03BC1E580170009401F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA5F03BE1E580170009401F0 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CameraVC.swift; path = Controller/CameraVC.swift; sourceTree = "<group>"; };
@@ -28,6 +45,13 @@
 		AA5F03D11E5805BB009401F0 /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		AA5F03D31E5805D2009401F0 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		AA5F03D51E5805DB009401F0 /* PhotoCaptureDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCaptureDelegate.swift; sourceTree = "<group>"; };
+		AAD984671E5887F600364F5A /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundButton.swift; path = View/RoundButton.swift; sourceTree = "<group>"; };
+		AAD984691E58900400364F5A /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginVC.swift; path = Controller/LoginVC.swift; sourceTree = "<group>"; };
+		AAD9846B1E5890AD00364F5A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AAD9846E1E58937F00364F5A /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthService.swift; path = Service/AuthService.swift; sourceTree = "<group>"; };
+		AAD984701E5893B300364F5A /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataService.swift; path = Service/DataService.swift; sourceTree = "<group>"; };
+		B30AC9A0475B234E6C93063D /* Pods_DataxChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataxChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E59E9C13143C2BDF9CF25A88 /* Pods-DataxChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataxChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-DataxChat/Pods-DataxChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +59,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4637714DA3DDE87756E20A7 /* Pods_DataxChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B522CF42080804716980733 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B30AC9A0475B234E6C93063D /* Pods_DataxChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2EF2EF719501E5183AD1DDF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				701990187F0F816A0E44A4CE /* Pods-DataxChat.debug.xcconfig */,
+				E59E9C13143C2BDF9CF25A88 /* Pods-DataxChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AA5E02BA1E58A6BA007E5325 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AA5E02BB1E58A6CE007E5325 /* User.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		AA5F03B01E580170009401F0 = {
 			isa = PBXGroup;
 			children = (
 				AA5F03BB1E580170009401F0 /* DataxChat */,
 				AA5F03BA1E580170009401F0 /* Products */,
+				2EF2EF719501E5183AD1DDF1 /* Pods */,
+				1B522CF42080804716980733 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +112,8 @@
 		AA5F03BB1E580170009401F0 /* DataxChat */ = {
 			isa = PBXGroup;
 			children = (
+				AA5E02BA1E58A6BA007E5325 /* Model */,
+				AAD9846D1E58933400364F5A /* Service */,
 				AA5F03D01E5805AB009401F0 /* Delegate */,
 				AA5F03CF1E58018B009401F0 /* Controller */,
 				AA5F03CE1E580185009401F0 /* View */,
@@ -67,6 +121,7 @@
 				AA5F03C31E580170009401F0 /* Assets.xcassets */,
 				AA5F03C51E580170009401F0 /* LaunchScreen.storyboard */,
 				AA5F03C81E580170009401F0 /* Info.plist */,
+				AAD9846B1E5890AD00364F5A /* GoogleService-Info.plist */,
 			);
 			path = DataxChat;
 			sourceTree = "<group>";
@@ -75,6 +130,9 @@
 			isa = PBXGroup;
 			children = (
 				AA5F03D11E5805BB009401F0 /* PreviewView.swift */,
+				AA21C00B1E5882A2002201D1 /* RoundTextField.swift */,
+				AAD984671E5887F600364F5A /* RoundButton.swift */,
+				AA5E02B81E58A2CC007E5325 /* UserCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -84,6 +142,8 @@
 			children = (
 				AA5F03D31E5805D2009401F0 /* CameraViewController.swift */,
 				AA5F03BE1E580170009401F0 /* CameraVC.swift */,
+				AAD984691E58900400364F5A /* LoginVC.swift */,
+				AA5E02B61E58A1CD007E5325 /* UsersVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -93,8 +153,18 @@
 			children = (
 				AA5F03BC1E580170009401F0 /* AppDelegate.swift */,
 				AA5F03D51E5805DB009401F0 /* PhotoCaptureDelegate.swift */,
+				AA32631E1E58593F00B213CF /* MyCameraViewDelegate.swift */,
 			);
 			name = Delegate;
+			sourceTree = "<group>";
+		};
+		AAD9846D1E58933400364F5A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AAD9846E1E58937F00364F5A /* AuthService.swift */,
+				AAD984701E5893B300364F5A /* DataService.swift */,
+			);
+			name = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA5F03CB1E580170009401F0 /* Build configuration list for PBXNativeTarget "DataxChat" */;
 			buildPhases = (
+				7B801665401D078E9FAD1D3B /* [CP] Check Pods Manifest.lock */,
 				AA5F03B51E580170009401F0 /* Sources */,
 				AA5F03B61E580170009401F0 /* Frameworks */,
 				AA5F03B71E580170009401F0 /* Resources */,
+				D4DD42183A3A83655BB4F68F /* [CP] Embed Pods Frameworks */,
+				6AE9E6C94BF94EC2C5C66304 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -158,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA5F03C71E580170009401F0 /* LaunchScreen.storyboard in Resources */,
+				AAD9846C1E5890AD00364F5A /* GoogleService-Info.plist in Resources */,
 				AA5F03C41E580170009401F0 /* Assets.xcassets in Resources */,
 				AA5F03C21E580170009401F0 /* Main.storyboard in Resources */,
 			);
@@ -165,16 +239,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6AE9E6C94BF94EC2C5C66304 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DataxChat/Pods-DataxChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B801665401D078E9FAD1D3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D4DD42183A3A83655BB4F68F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DataxChat/Pods-DataxChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AA5F03B51E580170009401F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAD984681E5887F600364F5A /* RoundButton.swift in Sources */,
+				AA5E02B91E58A2CC007E5325 /* UserCell.swift in Sources */,
 				AA5F03BF1E580170009401F0 /* CameraVC.swift in Sources */,
 				AA5F03D41E5805D2009401F0 /* CameraViewController.swift in Sources */,
 				AA5F03BD1E580170009401F0 /* AppDelegate.swift in Sources */,
+				AA21C00C1E5882A2002201D1 /* RoundTextField.swift in Sources */,
+				AA5E02BC1E58A6CE007E5325 /* User.swift in Sources */,
+				AAD984711E5893B300364F5A /* DataService.swift in Sources */,
+				AAD9846A1E58900400364F5A /* LoginVC.swift in Sources */,
 				AA5F03D61E5805DB009401F0 /* PhotoCaptureDelegate.swift in Sources */,
+				AAD9846F1E58937F00364F5A /* AuthService.swift in Sources */,
+				AA32631F1E58593F00B213CF /* MyCameraViewDelegate.swift in Sources */,
 				AA5F03D21E5805BB009401F0 /* PreviewView.swift in Sources */,
+				AA5E02B71E58A1CD007E5325 /* UsersVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +428,7 @@
 		};
 		AA5F03CC1E580170009401F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 701990187F0F816A0E44A4CE /* Pods-DataxChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4U3383F2ZS;
@@ -306,11 +438,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.datnguyen.UIScrollView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				SWIFT_WHOLE_MODULE_OPTIMIZATION = YES;
 			};
 			name = Debug;
 		};
 		AA5F03CD1E580170009401F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E59E9C13143C2BDF9CF25A88 /* Pods-DataxChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4U3383F2ZS;
@@ -320,6 +454,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.datnguyen.UIScrollView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				SWIFT_WHOLE_MODULE_OPTIMIZATION = YES;
 			};
 			name = Release;
 		};
